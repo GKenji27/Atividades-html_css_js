@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Rotina Semanal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #34495e;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: large;
+        }
+
+        .table-wrapper {
+            overflow-x: auto; /* Garante que funcione no celular */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px; /* Evita que a tabela esmague em telas pequenas */
+        }
+
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Estilo do Cabeçalho (Dias da Semana) */
+        th {
+            background-color: #34495e;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Destaque para o Domingo e Sábado no cabeçalho */
+        th.fds {
+            background-color: #e74c3c;
+        }
+
+        /* Estilo da Coluna de Horas (Esquerda) */
+        td.hora {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #2c3e50;
+            width: 100px;
+        }
+
+        /* Linhas alternadas para facilitar a leitura */
+        tr:nth-child(even) td:not(.hora) {
+            background-color: #fdfdfd;
+        }
+
+        /* Efeito de passar o mouse por cima */
+        tr:hover td:not(.hora) {
+            background-color: #f1f2f6;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title">
+        <caption>Minha Rotina Semanal</caption>
+    </div>
+    
+    
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th class="fds">Domingo</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th class="fds">Sábado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hora">06:20</td>
+                    <td> ------------- </td>
+                    <td colspan="5">Tomar Banho</td>
+                    <td> ------------- </td>
+                </tr>
+                <tr>
+                    <td class="hora">07:00</td>
+                    <td> ------------- </td>
+                    <td colspan="5">Café da Manhã</td>
+                    <td> ------------- </td>
+                </tr>
+                <tr>
+                    <td class="hora">08:00</td>
+                    <td>Café da Manhã</td>
+                    <td colspan="5">Trabalho</td>
+                    <td> ------------- </td>
+                </tr>
+                
+                <tr>
+                    <td class="hora">12:00</td>
+                    <td>Arrumar a Casa</td>
+                    <td colspan="5">Almoço</td>
+                    <td>Café da Manhã</td>
+                </tr>
+                <tr>
+                    <td class="hora">13:00</td>
+                    <td>Almoço</td>
+                    <td colspan="5">Trabalho</td>
+                    <td>Lazer / Compras</td>
+                </tr>
+                
+                <tr>
+                    <td class="hora">18:00</td>
+                    <td>Assistir Serie</td>
+                    <td colspan="5">Merendar</td>
+                    <td>Assistir Serie</td>
+                </tr>
+                <tr>
+                    <td class="hora">19:00</td>
+                    <td>Jogar Video Game</td>
+                    <td colspan="5">Faculdade</td>
+                    <td>Jogar Video Game</td>
+                </tr>
+                <tr>
+                    <td class="hora">22:40</td>
+                    <td colspan="7">Jantar</td>
+                    
+                </tr>
+                <tr>
+                    <td class="hora">23:00</td>
+                    <td colspan="6">Dormir</td>
+                    <td>Jogar Video Game</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
